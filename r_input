@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo What univerity you attend?
+read univ
+echo What semester are you in?
+read s
+echo What college is your major in?
+read col
+read -sp "what is you $univ ID?" id
+read -p "what are your grades?" g1 g2 g3 g4 g5
+echo You are in your $s semester, studying in the college of $col at $univ
+echo       
+echo "your first grade was: $g1"
+echo "your second first grade was: $g2"
+
+echo "your third grade was: $g3"
+
+echo "your fourth grade was: $g4"
+
+echo "your fifth grade was: $g5"
+
+if [ $univ = BYU ] && [ $s = 3rd ] && [ $col = Engineering ]
+then
+ echo you are taking CHEM 357, MATH 302, CH EN 273, and RELG 
+fi
+echo "thanks for your id, $id"

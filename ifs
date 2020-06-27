@@ -1,0 +1,17 @@
+#!/bin/bash
+a=$1
+b=$2
+if [ $a -gt $b ]
+then
+	echo $a
+else
+	echo $b
+fi
+
+f=$3
+if [ -r $f ]
+then
+	echo true
+else 
+	echo false
+fi

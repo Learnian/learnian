@@ -1,0 +1,4 @@
+#!/bin/bash
+cd
+Name=$(tail -1 BYU.rtf)
+echo $Name

@@ -1,0 +1,44 @@
+#!/bin/bash
+
+
+pwd(){
+  echo pwd 
+
+}
+
+
+cd(){
+  echo current directory
+  command pwd
+
+}
+
+cd
+
+
+
+
+#a=1
+#b=2
+#f(){
+# local a=3
+# echo $a $b
+# a=4
+# b=5
+#}
+#echo $a $b
+#f
+#echo $a $b
+
+
+
+
+
+
+#f_n(){
+#	echo $(($1*$2))
+#	echo $(($1/$2))
+#	return 51
+#}
+#f_n $1 $2
+#echo $?

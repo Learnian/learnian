@@ -1,0 +1,25 @@
+#!/bin/bash
+day=$(date +%u)
+case $day in
+    1)
+      echo Mon
+      ;;
+    2)
+      echo Tues
+      ;;
+    3)
+      echo Wen
+      ;;
+    4)
+      echo Thur
+      ;;
+    5)
+      echo Fri
+      ;;
+    6)
+      echo Sat
+      ;;
+    7)
+      echo Sun
+      ;;
+esac

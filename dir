@@ -1,0 +1,17 @@
+#!/bin/bash
+
+list_d=$1
+
+for entry in "$list_d"/*
+do
+  echo "$entry"
+  if [ -d $entry ]
+  then 
+    cd $entry
+    n=$(ls -1 | wc -l)
+    echo $n
+ else
+    sz=$(wc -c <"$entry") 
+    echo $sz
+ fi
+done

@@ -1,0 +1,59 @@
+#!/bin/bash
+
+l='10 30 60 100 250 finish'
+
+PS3="How many hrs will you study? Select 1 or 2 or 3 ... etc"
+
+select hrs in $l
+do
+ # echo $hrs
+if [ $hrs =  finish ]
+  then
+     break
+  fi
+  score=$((1.1*$hrs+1000))
+  echo "Your score: $score"
+done
+
+  
+
+
+
+
+
+
+
+
+
+
+
+#list='BYU ChEn 273'
+#for i in $list
+#do
+#  echo $i
+#done
+
+#dots=0
+#v='1 2 3 4 5 6 7 8 9 10'
+#w='1 2 3 4 5 6 7 8 9 10'
+#for a in $v 
+#do
+#   dots=$(($dots + $a**2))
+#done
+#echo $dots
+
+
+#i=1
+#while [ $i -lt 11 ]
+#do 
+#   echo $i
+#   i=$((i+1))
+#done
+
+#i=1
+#until [ $i -gt 10 ]
+#do 
+#   echo $i
+#   i=$((i+1))
+#done
+

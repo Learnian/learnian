@@ -1,0 +1,57 @@
+#!/bin/bash
+day=$(date +%u)
+if [ $# -lt 1 ]
+then
+ if [ $day = 1 ]
+ then 
+  echo FHE
+ elif [ $day = 2 ]
+ then 
+  echo Torneek
+ elif [ $day = 3 ]
+ then 
+  echo Midweek
+ elif [ $day = 4 ]
+ then 
+  echo Chetvurtuk
+ elif [ $day = 5 ]
+ then 
+  echo Last weekday
+ elif [ $day = 6 ]
+ then 
+  echo Jewish sabat
+ elif [ $day = 7 ]
+ then 
+  echo Holy Sabbath Day
+ fi
+
+elif [ $# -eq 1 ]
+then
+ dy=$1
+ if [ $dy = 1 ]
+ then 
+  echo Monday
+ elif [ $dy = 2 ]
+ then 
+  echo Tuesday
+ elif [ $dy = 3 ]
+ then 
+  echo Wedensday
+ elif [ $dy = 4 ]
+ then 
+  echo Thursday  
+ elif [ $dy = 5 ]
+ then 
+  echo Friday      
+ elif [ $dy = 6 ]
+ then 
+  echo Saturday    
+ elif [ $dy = 7 ]
+ then 
+  echo Sabbath         
+ fi
+ 
+fi
+
+
+

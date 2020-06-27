@@ -1,0 +1,16 @@
+#!/bin/bash
+
+a=2345
+b=${#a}
+echo "length of a is $b"
+ri=$RANDOM
+while [ $ri -gt 100 ]
+do
+ ri=$RANDOM
+done
+echo $ri
+
+#rt=$((ri%330+3))
+#echo $rt
+#echo $t
+
