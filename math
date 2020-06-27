@@ -1,0 +1,23 @@
+#!/bin/bash
+a=$1
+b=$2
+#let add=$a+$b
+#let mul=$a*$b
+#let sub=$a-$b
+#let div=$a/$b
+#let exp=$a**$b
+#let mod=$a%$b
+add=$(($a+$b))
+mul=$(($a*$b))
+sub=$(($a-$b))
+div=$(($a/$b))
+exp=$(($a**$b))
+mod=$(($a%$b))
+
+echo $add
+echo $sub
+echo $mul
+echo $div
+echo $exp
+echo $mod 
+
